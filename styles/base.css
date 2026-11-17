@@ -45,40 +45,32 @@
 }
 
 body {
-  padding: 0;
-margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 line-height: 1.6;
+}
 
-
+#course-title{
+ text-align: center;
+ display: block;
 }
 
 header {
-  
+  max-width: 980px;
+  margin: 0 auto;
 background-color: #264653;
-color: white;
-padding: 20px;
-text-align: center;
 }
 
-.nav-bar {
+nav {
 background-color: #222; 
- padding: 0; 
   display: flex;
-    justify-content: space-around;
-   margin: 0;
-    align-items: center;
-   
-width: 100%;
+    justify-content: space-between;   
 }
 
 nav a {
 color: white;
 text-decoration: none;
- padding: 10px;  
+ padding: 20px 20px 10px;  
 display:block;
-
-
 }
 
 nav a:hover {
@@ -86,17 +78,10 @@ background-color: #e9c46a;
 color: #222;
 }
 
-nav ul {
+nav li {
     list-style-type: none;
     display: flex;
 }
-
-nav li {
-  /*
-    border-right: 1px solid black;
-*/
-}
-
 
 h1 {
   font-family: "Poppins", sans-serif;
@@ -105,8 +90,8 @@ h1 {
 text-align: center;
 color: #264653;
 }
+
 .card {
-  
     font-family: "Roboto", sans-serif;
     background-color: white;
     border: 1px solid #ccc;
@@ -123,7 +108,7 @@ font-size: 1.5rem;
 font-weight: 700;
 
 }
-.card b{
+.card h3{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +118,9 @@ font-size: 1.5rem;
 font-weight: 700;
 font-family: "Roboto", sans-serif;
 text-align: center;
-border-bottom: 1px solid black;
+border-bottom:  1px solid #aaa;
+   padding-bottom: 0.3rem;
+    margin: 1rem auto;
 }
 .me img {
     border-radius: 20px;
@@ -145,33 +132,28 @@ border-bottom: 1px solid black;
 .ghana figure{
     float: left;
     padding: 25px;
-    
+     font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
 }
+
 .ghana {
 padding: 20px;}
+
 .card p{
 padding: 25px;
 font-family: 'Times New Roman', Times, serif;
 font-weight: 400;
 font-size: 1rem;
-
 }
 
-footer {
-background-color: #264653;
-color: white;
-text-align: center;
-padding: 15px;
-}
-.linking {
-    
-    background-color: white;
+.links {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    
 }
-.linking h2 {
+
+.links h2 {
     background-color: #264653;
     color: white;
     padding: 10px;
@@ -179,15 +161,24 @@ padding: 15px;
     font-size: 1.2rem;
     margin: 0;
 }
-.linking ul {
+
+.links ul {
     margin: auto 0;
     padding: 20px 40px;
 }
-.two {
+
+.grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
     margin: 20px auto;
+}
+
+footer {
+background-color: #264653;
+color: white;
+text-align: center;
+padding: 15px;
 }
 
 @media screen and (min-width:640px) {
