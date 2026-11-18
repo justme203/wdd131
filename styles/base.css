@@ -53,6 +53,9 @@ line-height: 1.6;
  text-align: center;
  display: block;
  color: white;
+ font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 header {
@@ -98,7 +101,7 @@ color: #264653;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 0px;
-    margin-bottom: 20px;
+        overflow: hidden;
 }
 .card h2 {
 background-color: #264653;
@@ -122,12 +125,26 @@ border-bottom:  1px solid #aaa;
     margin: 1rem auto;
     width: 60%;
 }
+.me{
+  padding: 1rem;
+}
 .me img {
-    border-radius: 50px;
-    width: 200px;
-    float: right;
-  height: auto;
-  padding: 5px;
+
+     float: right;
+    width: 120px;
+    height: auto;
+    border: 1px solid #aaa;
+    padding: 2px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.16);
+    margin: 0 0 1rem 1rem;
+}
+
+.ghana img {
+    width: 140px;
+    height: auto;
+    border:1px solid #aaa;
+    padding: 2px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.16);;
 }
 .ghana figure{
     float: left;
@@ -151,6 +168,7 @@ font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+ padding: 0px;
 }
 
 .links h2 {
@@ -171,11 +189,14 @@ font-size: 1rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
-    margin: 1rem auto;
-    max-width: 960px;
+    margin: 0 auto;
+    max-width: 980px;
+    margin-bottom: 15px;
+   
 }
 
 footer {
+margin: 0 auto;
 background-color: #264653;
 color: white;
 text-align: center;
